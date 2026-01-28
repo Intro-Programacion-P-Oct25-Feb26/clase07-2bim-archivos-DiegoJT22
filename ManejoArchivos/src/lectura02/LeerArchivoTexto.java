@@ -22,9 +22,12 @@ public class LeerArchivoTexto {
             while (entrada.hasNext()) {
                 String linea = entrada.nextLine();
                 List<String> lista = Arrays.asList(linea.split("\\|"));
+                /*
+                El pipe es un caracter especial y a no ser que sea ; o , 
+                tendra que tener doble backslash para espacar al caracter
+                 */
                 ArrayList<String> linea_partes = new ArrayList<>(lista);
-                
-                
+
                 System.out.printf("%s\n", linea_partes.get(0));
                 System.out.printf("%s\n", linea_partes.get(1));
                 System.out.printf("%s\n", linea_partes.get(2));
@@ -41,10 +44,10 @@ public class LeerArchivoTexto {
     } // fin del m�todo leerRegistros
     // cierra el archivo y termina la aplicaci�n
 
-    
 } // fin de la clase LeerArchivoTexto
 
-/**************************************************************************
+/**
+ * ************************************************************************
  * (C) Copyright 1992-2007 por Deitel & Associates, Inc. y                *
  * Pearson Education, Inc. Todos los derechos reservados.                 *
  
