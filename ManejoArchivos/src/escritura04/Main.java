@@ -4,7 +4,7 @@
  */
 package escritura04;
 
-import escritura03.CrearArchivoTexto;
+
 import java.util.Scanner;
 
 /**
